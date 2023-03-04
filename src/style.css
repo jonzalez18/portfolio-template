@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.form-input:focus ~ span {
+  display: none;
+}
+
+.background-full {
+  background-size: 100% 100%;
+}
+
+.remove-scroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.blurred-gray {
+  background: rgba(66, 80, 105, 0.75);
+  backdrop-filter: blur(2.5px);
+}
